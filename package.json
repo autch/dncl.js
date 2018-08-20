@@ -1,0 +1,16 @@
+{
+  "name": "dncl.js",
+  "version": "1.0.0",
+  "description": "Bogus DNCL parser",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jison": "jison dncl.jison dncl.jisonlex",
+    "jison-t": "jison -t dncl.jison dncl.jisonlex"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jison-gho": "^0.6.1-215"
+  }
+}
