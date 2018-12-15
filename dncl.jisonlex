@@ -62,8 +62,8 @@ ident       (\w|[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF\uF900-\uFAFF！？])+
 "もし"      return 'IF';
 "ならば"    return 'THEN';
 "を実行する"  return 'ENDIF';
-"を実行し"[、，]そうでなくもし      return 'ELIF';
-"を実行し"[、，]そうでなければ      return 'ELSE';
+"を実行し"[、，]"そうでなくもし"      return 'ELIF';
+"を実行し"[、，]"そうでなければ"      return 'ELSE';
 
 "の間"[、，]   return 'DO_WHILE';
 "を繰り返す"    return 'LOOP';
